@@ -11,17 +11,18 @@ import UIKit
 class MainCategoryViewController: UIViewController,UIWebViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UITextFieldDelegate {
     
     @IBOutlet var searchTF: UITextField!
-    var imageView : UIImageView!
+    @IBOutlet var landingWebView: UIWebView!
     @IBOutlet var TFView: UIView!
-    
     @IBOutlet var collectionview: UICollectionView!
+    
     var lang:String!
     var selected:Int!
     var indecator:UIView! = nil
-    @IBOutlet var landingWebView: UIWebView!
+    var imageView : UIImageView!
     var cat_id: String!
     var catagoryArray = [BaseScreenObj]()
     var categoryName = [String]()
+    var categoryToScrtoll:Int!
     override func viewDidLoad() {
         //load image
         
@@ -31,6 +32,9 @@ class MainCategoryViewController: UIViewController,UIWebViewDelegate,UICollectio
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+       // self.categoryToScrtoll = UserInfoDefault.getCategoryIndex()
+        
+        
         self.cat_id = UserInfoDefault.getCategoryID()
         self.lang = UserInfoDefault.getLanguage()
         
@@ -167,15 +171,26 @@ class MainCategoryViewController: UIViewController,UIWebViewDelegate,UICollectio
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.view.endEditing(true)
-       let url = self.catagoryArray[indexPath.row].url
+        var url:String!
+        if lang.contains("ar"){
+        url = self.catagoryArray[indexPath.row].url_ar
+        }else{
+            url = self.catagoryArray[indexPath.row].url
+        }
         self.loadUrl(url: url)
         let categoryId = self.catagoryArray[indexPath.row].category_id
         UserInfoDefault.saveCategoryID(categoryID: categoryId)
+        //UserInfoDefault.saveCategoryIndex(CategoryIndex: indexPath.row)
+
          //let cell = collectionView.cellForItem(at: indexPath) as? MianCategoryCollectionViewCell
         //cell?.laCategoryName.textColor = .black
 
     }
-    
+  /*  override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let indexPath = IndexPath(item: self.categoryToScrtoll, section: 0)
+        self.collectionview.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
+    }*/
     
     //======================================================
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -212,7 +227,7 @@ class MainCategoryViewController: UIViewController,UIWebViewDelegate,UICollectio
     func loadImage(){
  
         self.imageView  = UIImageView(frame: CGRect(x: 0 , y: 7, width: 20 , height: 20))
-        self.imageView.center.x = self.TFView.center.x
+        self.imageView.center.x = self.view.center.x
         
         
         self.imageView.image = UIImage(named: "CategorySearch")?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))

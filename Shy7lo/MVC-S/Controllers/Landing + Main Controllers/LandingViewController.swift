@@ -59,6 +59,8 @@ class LandingViewController: UIViewController,UIWebViewDelegate {
             print("Clicked")
             print(request.url!)
             let url =  request.url
+            let newUrl =  String(describing: url!)
+            if newUrl.contains("cat_id") || newUrl.contains("category_id"){
             // if else for get category id id arabic so category_id else cat_id
             if lang.contains("ar"){
             let cat_id = url?.valueOf("category_id")
@@ -69,12 +71,13 @@ class LandingViewController: UIViewController,UIWebViewDelegate {
                 print("\(String(describing: cat_id))")
                 UserInfoDefault.saveCategoryID(categoryID: cat_id!)
             }
-                
+                let mytabbar = self.storyboard?.instantiateViewController(withIdentifier: "tabBarVC") as! UITabBarController
+                let appDelegate = UIApplication.shared.delegate  as! AppDelegate
+                appDelegate.window?.rootViewController = mytabbar
+            }
            
         
-            let mytabbar = self.storyboard?.instantiateViewController(withIdentifier: "tabBarVC") as! UITabBarController
-            let appDelegate = UIApplication.shared.delegate  as! AppDelegate
-            appDelegate.window?.rootViewController = mytabbar
+          
           
         
         }
@@ -98,7 +101,7 @@ class LandingViewController: UIViewController,UIWebViewDelegate {
              url = URL(string: AdditionalURLs.LandingScreen + "en")
         }
         
-        landingWebView.loadRequest(URLRequest(url: url, cachePolicy: NSURLRequest.CachePolicy.returnCacheDataElseLoad, timeoutInterval: 0.5))
+        landingWebView.loadRequest(URLRequest(url: url))
     }
 }
 

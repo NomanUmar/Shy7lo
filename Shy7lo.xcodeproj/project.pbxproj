@@ -27,10 +27,25 @@
 		160CD0DB211B08CD0079FB3E /* AdditionalURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CD0DA211B08CD0079FB3E /* AdditionalURLs.swift */; };
 		160CD0DD211B149B0079FB3E /* UrlExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CD0DC211B149B0079FB3E /* UrlExtention.swift */; };
 		160CD0EB211C14CC0079FB3E /* MianCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CD0EA211C14CC0079FB3E /* MianCategoryCollectionViewCell.swift */; };
+		1637E7CC21218C5100DE82D2 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7CB21218C5100DE82D2 /* AccountViewController.swift */; };
+		1637E7CE21218CD200DE82D2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7CD21218CD200DE82D2 /* SettingViewController.swift */; };
+		1637E7D22121906500DE82D2 /* LnaguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7D02121906500DE82D2 /* LnaguageTableViewCell.swift */; };
+		1637E7D32121906500DE82D2 /* LnaguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7D12121906500DE82D2 /* LnaguageTableViewCell.xib */; };
+		1637E7D62121908200DE82D2 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7D42121908200DE82D2 /* CurrencyTableViewCell.swift */; };
+		1637E7D72121908200DE82D2 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7D52121908200DE82D2 /* CurrencyTableViewCell.xib */; };
+		1637E7DA2121909E00DE82D2 /* SizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7D82121909E00DE82D2 /* SizeTableViewCell.swift */; };
+		1637E7DB2121909E00DE82D2 /* SizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7D92121909E00DE82D2 /* SizeTableViewCell.xib */; };
+		1637E7DE212190AE00DE82D2 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7DC212190AE00DE82D2 /* NotificationTableViewCell.swift */; };
+		1637E7DF212190AE00DE82D2 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7DD212190AE00DE82D2 /* NotificationTableViewCell.xib */; };
+		1637E7E62121A61500DE82D2 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7E52121A61500DE82D2 /* LanguageViewController.swift */; };
+		1637E7E92121B41A00DE82D2 /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7E72121B41A00DE82D2 /* EmailTableViewCell.swift */; };
+		1637E7EA2121B41A00DE82D2 /* EmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7E82121B41A00DE82D2 /* EmailTableViewCell.xib */; };
+		1637E7ED2121B43200DE82D2 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637E7EB2121B43200DE82D2 /* PasswordTableViewCell.swift */; };
+		1637E7EE2121B43200DE82D2 /* PasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637E7EC2121B43200DE82D2 /* PasswordTableViewCell.xib */; };
+		165271F42121CC5700E2BDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165271F32121CC5700E2BDA3 /* Main.storyboard */; };
 		1655AEA62118C0600019DF5C /* bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655AEA52118C0600019DF5C /* bottom.swift */; };
 		1692269A2105B1BC00A351B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169226992105B1BC00A351B8 /* AppDelegate.swift */; };
 		1692269C2105B1BC00A351B8 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1692269B2105B1BC00A351B8 /* LaunchViewController.swift */; };
-		1692269F2105B1BC00A351B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1692269D2105B1BC00A351B8 /* Main.storyboard */; };
 		169226A22105B1BC00A351B8 /* Shy7lo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 169226A02105B1BC00A351B8 /* Shy7lo.xcdatamodeld */; };
 		169226A42105B1BE00A351B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169226A32105B1BE00A351B8 /* Assets.xcassets */; };
 		169226A72105B1BE00A351B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169226A52105B1BE00A351B8 /* LaunchScreen.storyboard */; };
@@ -57,10 +72,6 @@
 		169226FD2109F8E300A351B8 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169226FC2109F8E300A351B8 /* CategoriesViewController.swift */; };
 		169226FF210A152800A351B8 /* AccountSignInOrJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169226FE210A152800A351B8 /* AccountSignInOrJoinViewController.swift */; };
 		16922701210AF51300A351B8 /* LableSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16922700210AF51300A351B8 /* LableSpacing.swift */; };
-		16AF0EA42118390D00B51117 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16AF0EA1211838FA00B51117 /* SF-Pro-Display-Bold.otf */; };
-		16AF0EA52118391200B51117 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16AF0EA2211838FB00B51117 /* SF-Pro-Display-Regular.otf */; };
-		16AF0EA62118391400B51117 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16AF0EA3211838FC00B51117 /* SF-Pro-Display-Semibold.otf */; };
-		16AF0EA82118395400B51117 /* Tahoma Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16AF0EA72118394B00B51117 /* Tahoma Bold.ttf */; };
 		16AF0EB121186D4E00B51117 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16AF0EB321186D4E00B51117 /* Localizable.strings */; };
 		16AF0EB62118729500B51117 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF0EB52118729500B51117 /* LocalizableString.swift */; };
 		16AF0EB8211880C700B51117 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF0EB7211880C700B51117 /* DesignableButton.swift */; };
@@ -87,18 +98,37 @@
 		16059219211D731100781C54 /* SubCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		1605921A211D731100781C54 /* SubCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		1605921D211DAA0500781C54 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		160CD0D3211984590079FB3E /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
 		160CD0D4211998460079FB3E /* TransitionArabic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionArabic.swift; sourceTree = "<group>"; };
 		160CD0D62119AA170079FB3E /* ApisCallingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApisCallingClass.swift; sourceTree = "<group>"; };
 		160CD0D8211B04040079FB3E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		160CD0DA211B08CD0079FB3E /* AdditionalURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalURLs.swift; sourceTree = "<group>"; };
 		160CD0DC211B149B0079FB3E /* UrlExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlExtention.swift; sourceTree = "<group>"; };
 		160CD0EA211C14CC0079FB3E /* MianCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MianCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		1637E7CB21218C5100DE82D2 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		1637E7CD21218CD200DE82D2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1637E7D02121906500DE82D2 /* LnaguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LnaguageTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7D12121906500DE82D2 /* LnaguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LnaguageTableViewCell.xib; sourceTree = "<group>"; };
+		1637E7D42121908200DE82D2 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7D52121908200DE82D2 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		1637E7D82121909E00DE82D2 /* SizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7D92121909E00DE82D2 /* SizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeTableViewCell.xib; sourceTree = "<group>"; };
+		1637E7DC212190AE00DE82D2 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7DD212190AE00DE82D2 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		1637E7E52121A61500DE82D2 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		1637E7E72121B41A00DE82D2 /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7E82121B41A00DE82D2 /* EmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailTableViewCell.xib; sourceTree = "<group>"; };
+		1637E7EB2121B43200DE82D2 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		1637E7EC2121B43200DE82D2 /* PasswordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordTableViewCell.xib; sourceTree = "<group>"; };
+		165271EE2121CB6300E2BDA3 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		165271EF2121CB6300E2BDA3 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		165271F02121CB6400E2BDA3 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		165271F12121CB6400E2BDA3 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		165271F22121CB6400E2BDA3 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
+		165271F32121CC5700E2BDA3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1655AEA52118C0600019DF5C /* bottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottom.swift; sourceTree = "<group>"; };
 		169226962105B1BC00A351B8 /* Shy7lo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shy7lo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169226992105B1BC00A351B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1692269B2105B1BC00A351B8 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		1692269E2105B1BC00A351B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169226A12105B1BC00A351B8 /* Shy7lo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shy7lo.xcdatamodel; sourceTree = "<group>"; };
 		169226A32105B1BE00A351B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169226A62105B1BE00A351B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,12 +156,7 @@
 		169226FC2109F8E300A351B8 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		169226FE210A152800A351B8 /* AccountSignInOrJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSignInOrJoinViewController.swift; sourceTree = "<group>"; };
 		16922700210AF51300A351B8 /* LableSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableSpacing.swift; sourceTree = "<group>"; };
-		16AF0EA1211838FA00B51117 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
-		16AF0EA2211838FB00B51117 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
-		16AF0EA3211838FC00B51117 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
-		16AF0EA72118394B00B51117 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
 		16AF0EAA21186BEA00B51117 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		16AF0EAC21186C9300B51117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		16AF0EAE21186CD500B51117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		16AF0EB221186D4E00B51117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		16AF0EB421186D5300B51117 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -200,6 +225,13 @@
 			path = "Sub Category XIB";
 			sourceTree = "<group>";
 		};
+		1605921F21216E2F00781C54 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		160CD0DE211BF6540079FB3E /* Welcome+Launch Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +261,25 @@
 			path = "Main Category Tab";
 			sourceTree = "<group>";
 		};
+		1637E7CF2121900C00DE82D2 /* Setting XIB */ = {
+			isa = PBXGroup;
+			children = (
+				1637E7D02121906500DE82D2 /* LnaguageTableViewCell.swift */,
+				1637E7D12121906500DE82D2 /* LnaguageTableViewCell.xib */,
+				1637E7D42121908200DE82D2 /* CurrencyTableViewCell.swift */,
+				1637E7D52121908200DE82D2 /* CurrencyTableViewCell.xib */,
+				1637E7D82121909E00DE82D2 /* SizeTableViewCell.swift */,
+				1637E7D92121909E00DE82D2 /* SizeTableViewCell.xib */,
+				1637E7DC212190AE00DE82D2 /* NotificationTableViewCell.swift */,
+				1637E7DD212190AE00DE82D2 /* NotificationTableViewCell.xib */,
+				1637E7E72121B41A00DE82D2 /* EmailTableViewCell.swift */,
+				1637E7E82121B41A00DE82D2 /* EmailTableViewCell.xib */,
+				1637E7EB2121B43200DE82D2 /* PasswordTableViewCell.swift */,
+				1637E7EC2121B43200DE82D2 /* PasswordTableViewCell.xib */,
+			);
+			path = "Setting XIB";
+			sourceTree = "<group>";
+		};
 		1692268D2105B1BC00A351B8 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +301,7 @@
 		169226982105B1BC00A351B8 /* Shy7lo */ = {
 			isa = PBXGroup;
 			children = (
+				1605921F21216E2F00781C54 /* Images */,
 				16AF0EA0211838DB00B51117 /* fonts */,
 				16F74E1E211406FB00AB8E40 /* Shy7lo.entitlements */,
 				169226F321073EB000A351B8 /* Supporting Project Files */,
@@ -372,9 +424,10 @@
 		169226F421073FC100A351B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				165271F32121CC5700E2BDA3 /* Main.storyboard */,
 				16059210211D726A00781C54 /* Sub Category XIB */,
 				16059203211C58CE00781C54 /* Category XIB */,
-				1692269D2105B1BC00A351B8 /* Main.storyboard */,
+				1637E7CF2121900C00DE82D2 /* Setting XIB */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -391,10 +444,11 @@
 		16AF0EA0211838DB00B51117 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				16AF0EA1211838FA00B51117 /* SF-Pro-Display-Bold.otf */,
-				16AF0EA2211838FB00B51117 /* SF-Pro-Display-Regular.otf */,
-				16AF0EA3211838FC00B51117 /* SF-Pro-Display-Semibold.otf */,
-				16AF0EA72118394B00B51117 /* Tahoma Bold.ttf */,
+				165271F02121CB6400E2BDA3 /* SF-Pro-Display-Bold.otf */,
+				165271EF2121CB6300E2BDA3 /* SF-Pro-Display-Medium.otf */,
+				165271F12121CB6400E2BDA3 /* SF-Pro-Display-Regular.otf */,
+				165271EE2121CB6300E2BDA3 /* SF-Pro-Display-Semibold.otf */,
+				165271F22121CB6400E2BDA3 /* Tahoma Bold.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -405,6 +459,9 @@
 				169226FE210A152800A351B8 /* AccountSignInOrJoinViewController.swift */,
 				16C60B6A210B1E4000871F4E /* AccountCongratulationViewController.swift */,
 				16C60B6D210B4D9300871F4E /* SignInViewController.swift */,
+				1637E7CB21218C5100DE82D2 /* AccountViewController.swift */,
+				1637E7CD21218CD200DE82D2 /* SettingViewController.swift */,
+				1637E7E52121A61500DE82D2 /* LanguageViewController.swift */,
 			);
 			path = "User Account Controllers";
 			sourceTree = "<group>";
@@ -496,18 +553,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1605920B211C5C2F00781C54 /* mainSearchTableViewCell.xib in Resources */,
+				1637E7D32121906500DE82D2 /* LnaguageTableViewCell.xib in Resources */,
 				169226A72105B1BE00A351B8 /* LaunchScreen.storyboard in Resources */,
-				16AF0EA42118390D00B51117 /* SF-Pro-Display-Bold.otf in Resources */,
+				1637E7DB2121909E00DE82D2 /* SizeTableViewCell.xib in Resources */,
 				169226A42105B1BE00A351B8 /* Assets.xcassets in Resources */,
 				16059218211D72D500781C54 /* SubCategoryBannerTableViewCell.xib in Resources */,
-				16AF0EA62118391400B51117 /* SF-Pro-Display-Semibold.otf in Resources */,
+				1637E7EE2121B43200DE82D2 /* PasswordTableViewCell.xib in Resources */,
 				1605921C211D731100781C54 /* SubCategoryTableViewCell.xib in Resources */,
 				16AF0EB121186D4E00B51117 /* Localizable.strings in Resources */,
+				1637E7EA2121B41A00DE82D2 /* EmailTableViewCell.xib in Resources */,
 				16F74E2821143BD000AB8E40 /* GoogleService-Info.plist in Resources */,
-				16AF0EA52118391200B51117 /* SF-Pro-Display-Regular.otf in Resources */,
+				1637E7D72121908200DE82D2 /* CurrencyTableViewCell.xib in Resources */,
 				16059207211C590000781C54 /* searchTableViewCell.xib in Resources */,
-				16AF0EA82118395400B51117 /* Tahoma Bold.ttf in Resources */,
-				1692269F2105B1BC00A351B8 /* Main.storyboard in Resources */,
+				165271F42121CC5700E2BDA3 /* Main.storyboard in Resources */,
+				1637E7DF212190AE00DE82D2 /* NotificationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,29 +633,38 @@
 				1605920A211C5C2F00781C54 /* mainSearchTableViewCell.swift in Sources */,
 				16C6CCAF211172AA00EC5CE6 /* LandingViewController.swift in Sources */,
 				169226E92105B3E000A351B8 /* Status Bar.swift in Sources */,
+				1637E7CE21218CD200DE82D2 /* SettingViewController.swift in Sources */,
 				169226BE2105B35A00A351B8 /* UserInfoDefault.swift in Sources */,
 				169226A22105B1BC00A351B8 /* Shy7lo.xcdatamodeld in Sources */,
 				1655AEA62118C0600019DF5C /* bottom.swift in Sources */,
+				1637E7D22121906500DE82D2 /* LnaguageTableViewCell.swift in Sources */,
 				16C60B6B210B1E4000871F4E /* AccountCongratulationViewController.swift in Sources */,
 				160591FC211C489900781C54 /* DesignableView.swift in Sources */,
 				169226E32105B3E000A351B8 /* designTextField.swift in Sources */,
 				169226EA2105B3E000A351B8 /* Circle Image View.swift in Sources */,
+				1637E7DA2121909E00DE82D2 /* SizeTableViewCell.swift in Sources */,
 				169226E22105B3E000A351B8 /* buttonRadius.swift in Sources */,
 				1692269C2105B1BC00A351B8 /* LaunchViewController.swift in Sources */,
 				169226FD2109F8E300A351B8 /* CategoriesViewController.swift in Sources */,
+				1637E7D62121908200DE82D2 /* CurrencyTableViewCell.swift in Sources */,
 				169226E82105B3E000A351B8 /* Time.swift in Sources */,
 				16AF0EB62118729500B51117 /* LocalizableString.swift in Sources */,
+				1637E7DE212190AE00DE82D2 /* NotificationTableViewCell.swift in Sources */,
 				169226EB2105B3E000A351B8 /* SwiftyGif.swift in Sources */,
 				169226EE2105B3E000A351B8 /* Toast.swift in Sources */,
 				169226E62105B3E000A351B8 /* ScaledHeightImageView.swift in Sources */,
 				1605921B211D731100781C54 /* SubCategoryTableViewCell.swift in Sources */,
+				1637E7E62121A61500DE82D2 /* LanguageViewController.swift in Sources */,
+				1637E7E92121B41A00DE82D2 /* EmailTableViewCell.swift in Sources */,
 				16059217211D72D500781C54 /* SubCategoryBannerTableViewCell.swift in Sources */,
 				169226BC2105B35A00A351B8 /* GetToken.swift in Sources */,
 				16AF0EB8211880C700B51117 /* DesignableButton.swift in Sources */,
 				169226FF210A152800A351B8 /* AccountSignInOrJoinViewController.swift in Sources */,
 				169226E52105B3E000A351B8 /* DesignTabBarHeight.swift in Sources */,
+				1637E7CC21218C5100DE82D2 /* AccountViewController.swift in Sources */,
 				16922701210AF51300A351B8 /* LableSpacing.swift in Sources */,
 				169226F92109D9AA00A351B8 /* CountryViewController.swift in Sources */,
+				1637E7ED2121B43200DE82D2 /* PasswordTableViewCell.swift in Sources */,
 				16059206211C590000781C54 /* searchTableViewCell.swift in Sources */,
 				169226BD2105B35A00A351B8 /* ApiManager.swift in Sources */,
 				16059202211C51A200781C54 /* SearchCollectionViewCell.swift in Sources */,
@@ -624,16 +692,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1692269D2105B1BC00A351B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1692269E2105B1BC00A351B8 /* Base */,
-				16AF0EAC21186C9300B51117 /* en */,
-				160CD0D3211984590079FB3E /* ar-SA */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		169226A52105B1BE00A351B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

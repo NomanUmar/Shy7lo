@@ -24,8 +24,30 @@
 "ShoppinForGVC" = "لمن أتسوق؟";
 "BuShopNowGVC" =   "تسوق";
 
+//AVC account View Controler
+"AccountAVC" = "الحساب";
 
 
+//Setting View Controller
+
+"SettingSVC" = "إعدادات";
+"LanguageSVC" = "لغة";
+"EnglishSVC" = "عـربـي";
+"CurrencySVC" = "دقة";
+"SaudiRiyalSVC" = "الريال السعودي";
+"SizeSVC" = "بحجم";
+"UKSVC" = "المملكة المتحدة";
+"NotificationsSVC" = "إخطارات";
+"SalesPromotionsSVC" = "المبيعات والترويج";
+"EmailSVC" = "البريد الإلكتروني";
+"PasswordSVC" = "كلمه السر";
+"ChangeEmailSVC" = "تغيير الايميل";
+"ChangePasswordSVC" = "تغيير كلمة السر";
+
+
+//language View COntroller
+
+"LanguageLVC" = "لغة";
 
 
 

@@ -10,6 +10,7 @@ import UIKit
 
 class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet var buttonBack: UIButton!
     @IBOutlet var categoryName: UILabel!
     @IBOutlet var tableView: UITableView!
     var SubCategoryId:String!
@@ -19,6 +20,12 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     var SubCategoryName:String!
 
     override func viewDidLoad() {
+        
+        
+        //set image in same direction with language
+        let flippedImage = UIImage(named: "back_icon")?.imageFlippedForRightToLeftLayoutDirection()
+        
+        self.buttonBack.setImage(flippedImage, for: .normal)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

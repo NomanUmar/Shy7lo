@@ -21,5 +21,8 @@ class TransitionArabic: NSObject {
             UINavigationBar.appearance().semanticContentAttribute = .forceLeftToRight
         }
     }
+    
+    
+    
 
 }

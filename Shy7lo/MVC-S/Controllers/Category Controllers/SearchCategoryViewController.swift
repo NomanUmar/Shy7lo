@@ -17,6 +17,7 @@ class SearchCategoryViewController: UIViewController,UITextFieldDelegate,UIColle
     @IBOutlet var collectionview: UICollectionView!
     
     
+    var categoryToScrtoll:Int!
     var imageView : UIImageView!
     var SubCategoryResponse:SubCategoriesResponse!
     var categoriesAll = [child_data_response]()
@@ -35,6 +36,7 @@ class SearchCategoryViewController: UIViewController,UITextFieldDelegate,UIColle
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+   // self.categoryToScrtoll = UserInfoDefault.getCategoryIndex()
         
         tableView.register(UINib(nibName: "searchTableViewCell", bundle: nil), forCellReuseIdentifier: "searchTableViewCell")
         
@@ -127,11 +129,18 @@ class SearchCategoryViewController: UIViewController,UITextFieldDelegate,UIColle
         let categoryId = self.catagoryArray[indexPath.row].category_id
         UserInfoDefault.saveCategoryID(categoryID: categoryId)
         self.apiCategoryData(id: categoryId)
+        //UserInfoDefault.saveCategoryIndex(CategoryIndex: indexPath.row)
         
         //let cell = collectionView.cellForItem(at: indexPath) as? MianCategoryCollectionViewCell
         //cell?.laCategoryName.textColor = .black
         
     }
+    
+   /* override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let indexPath = IndexPath(item: self.categoryToScrtoll, section: 0)
+        self.collectionview.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
+    }*/
     //=================================================================
     
     
@@ -209,7 +218,7 @@ class SearchCategoryViewController: UIViewController,UITextFieldDelegate,UIColle
     func loadImage(){
         
         self.imageView  = UIImageView(frame: CGRect(x: 0 , y: 7, width: 20 , height: 20))
-        self.imageView.center.x = self.TFView.center.x
+        self.imageView.center.x = self.view.center.x
         
         
         self.imageView.image = UIImage(named: "CategorySearch")?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
@@ -285,7 +294,7 @@ class SearchCategoryViewController: UIViewController,UITextFieldDelegate,UIColle
         self.collectionview.selectItem(at: indexPathForFirstRow, animated: false, scrollPosition: UICollectionViewScrollPosition.init(rawValue: 0))
         collectionView(self.collectionview, didSelectItemAt: indexPathForFirstRow)
     }
-    
+ //get data of  sub category
     
     func apiCategoryData(id:String){
         

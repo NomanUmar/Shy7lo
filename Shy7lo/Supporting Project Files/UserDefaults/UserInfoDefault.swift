@@ -57,6 +57,11 @@ import UIKit
         UserDefaults.standard.synchronize()
     }
     
+    static func saveCategoryIndex(CategoryIndex: Int) {
+        UserDefaults.standard.set(CategoryIndex, forKey: "CategoryIndex")
+        UserDefaults.standard.synchronize()
+    }
+    
     static func saveConfirmed(confirmed: Bool) {
         UserDefaults.standard.set(confirmed, forKey: "confirmed")
         UserDefaults.standard.synchronize()
@@ -202,12 +207,17 @@ import UIKit
         return userValue
     }
     
+    static func getCategoryIndex() -> Int {
+        guard let userValue =  UserDefaults.standard.value(forKey: "CategoryIndex") as? Int else {return 0}
+        return userValue
+    }
+    
     static func getConfirmed() -> Bool {
         guard let userValue =  UserDefaults.standard.value(forKey: "confirmed") as? Bool else {return false}
         return userValue
     }
     
-    
+ //CategoryIndex
     
     
     static func getPrivacyPolicy() -> String {

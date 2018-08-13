@@ -40,6 +40,7 @@ struct BaseScreenObj : Codable{
     var title_en: String
     var title_ar:String
     var url : String
+    var url_ar : String
     
 }
 
@@ -51,6 +52,7 @@ struct ChildScreenObj : Codable{
     var title_en : String
     var title_ar : String
     var url : String
+    var url_ar : String
     
     
 }

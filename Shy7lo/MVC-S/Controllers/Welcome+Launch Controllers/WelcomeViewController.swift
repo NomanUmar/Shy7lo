@@ -58,15 +58,11 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func buArabic(_ sender: Any) {
         UserInfoDefault.saveLanguage(language: "ar-SA")
-        TransitionArabic.switchViewControllers(isArabic: true)
+         TransitionArabic.switchViewControllers(isArabic: true)
          UILabel.appearance().substituteFontName = "System"
          UITextField.appearance().substituteFontName = "System"
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CountryViewController") as! CountryViewController
         self.navigationController?.pushViewController(vc,animated: true)
     }
-    
-    
-   
-    
 }

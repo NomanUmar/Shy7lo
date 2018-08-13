@@ -10,22 +10,33 @@
 import UIKit
 
 class LaunchViewController: UIViewController {
-var window: UIWindow?
+    var window: UIWindow?
     @IBOutlet var preLoader: UIProgressView!
     let maxTime : Float = 3.0
     var currentTime : Float = 0.0
     
     override func viewDidLoad() {
-     
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func viewWillAppear(_ animated: Bool) {
-        preLoader.setProgress(currentTime, animated: true)
+        
+        
+        let language = UserInfoDefault.getLanguage()
+        if language.contains("ar"){
+            TransitionArabic.switchViewControllers(isArabic: true)
+            UILabel.appearance().substituteFontName = "System"
+            UITextField.appearance().substituteFontName = "System"
+        }else{
+            TransitionArabic.switchViewControllers(isArabic: false)
+        }
+        
         self.callForAppInit()
+        preLoader.setProgress(currentTime, animated: true)
         perform(#selector(updateLoader), with: nil, afterDelay: 1.0)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,7 +53,7 @@ var window: UIWindow?
         
         currentTime = currentTime + 1.0
         preLoader.progress = currentTime/maxTime
-       
+        
         if currentTime < maxTime {
             
             perform(#selector(updateLoader), with: nil, afterDelay: 1.0)
@@ -53,11 +64,12 @@ var window: UIWindow?
     
     
     func nextController(){
-    
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let newInstallation = UserDefaults.standard.bool(forKey: "newInstallation")
+        //check app new install or not, first time insall or not
         if newInstallation  {
             print("Not first launch.")
             
@@ -69,7 +81,7 @@ var window: UIWindow?
             }else{
                 TransitionArabic.switchViewControllers(isArabic: false)
             }
-           // self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LandingViewController")
+            // self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LandingViewController")
             
             let vc = storyboard.instantiateViewController(withIdentifier: "LandingViewController") as! LandingViewController
             
@@ -79,7 +91,8 @@ var window: UIWindow?
             
             
         } else {
-            
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "newInstallation")
             let locale = Locale.current
             
             let countrycode = locale.regionCode!
@@ -92,22 +105,25 @@ var window: UIWindow?
             
             if preferredLanguage.contains("ar"){
                 UserInfoDefault.saveLanguage(language: "ar-SA")
-               
+                
                 
                 TransitionArabic.switchViewControllers(isArabic: true)
-                 UILabel.appearance().substituteFontName = "System"
-                 UITextField.appearance().substituteFontName = "System"
+                //for arabic system font
+                UILabel.appearance().substituteFontName = "System"
+                UITextField.appearance().substituteFontName = "System"
+                
+                let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+                self.navigationController?.pushViewController(vc,animated: true)
+                
             }else{
+                
+                TransitionArabic.switchViewControllers(isArabic: false)
                 UserInfoDefault.saveLanguage(language: "en")
+                let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+                self.navigationController?.pushViewController(vc,animated: true)
+                
             }
-            print("First launch, setting UserDefault.")
-            UserDefaults.standard.set(true, forKey: "newInstallation")
-            let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
-            
-            self.navigationController?.pushViewController(vc,animated: true)
-            
         }
-
         //present((self.window?.rootViewController)!, animated:false, completion:nil)
     }
     
@@ -137,9 +153,5 @@ var window: UIWindow?
             }
         }
     }
-    
-    
-    
-    
 }
 
